@@ -1,0 +1,321 @@
+/* General */
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+  }
+  
+  header {
+    text-align: center;
+    background-color: #004080;
+    color: white;
+    padding: 1rem 0;
+  }
+  
+  header h1 {
+    font-family: 'Playfair Display', serif;
+    margin: 0;
+  }
+  
+  main {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 1rem;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Tabs */
+  .tabs {
+    display: flex;
+    justify-content: space-between;
+    background-color: #f5f5f5;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+  }
+  
+  .tab-link {
+    padding: 1rem;
+    text-align: center;
+    flex: 1;
+    cursor: pointer;
+    border: none;
+    background: none;
+  }
+  
+  .tab-link.active {
+    background-color: #004080;
+    color: white;
+  }
+  
+  .tab-content {
+    display: none;
+  }
+  
+  .tab-content.active {
+    display: block;
+  }
+  
+  /* Formulario */
+  fieldset {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  legend {
+    font-weight: bold;
+    color: #004080;
+  }
+  
+  .form-group {
+    margin-bottom: 1rem;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+  
+  input, textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  textarea {
+    resize: vertical;
+  }
+  
+  .form-actions {
+    text-align: right;
+    margin-top: 1rem;
+  }
+  
+  button {
+    padding: 0.7rem 1.5rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button[type="submit"] {
+    background-color: #004080;
+    color: white;
+  }
+  
+  button[type="reset"] {
+    background-color: #ccc;
+  }
+  input#num-inventario {
+    font-family: monospace;
+  }
+  select {
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #fff;
+    cursor: pointer;
+  }
+  /* Estilo general de la tabla */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  background-color: #ffffff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden; /* Para que las esquinas queden redondeadas */
+}
+
+table th, table td {
+  padding: 15px;
+  text-align: left;
+  border-bottom: 1px solid #e5e5e5; /* Separador entre filas */
+}
+
+table th {
+  background-color: #0056b3; /* Azul principal */
+  color: #ffffff; /* Texto blanco */
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+table tr:nth-child(even) {
+  background-color: #f8f9fa; /* Gris claro para filas alternadas */
+}
+
+table tr:hover {
+  background-color: #e9ecef; /* Cambio de color al pasar el cursor */
+}
+
+table td {
+  color: #333333; /* Gris oscuro */
+}
+
+/* Estilo para imágenes dentro de las tablas */
+table img {
+  max-width: 80px;
+  height: auto;
+  display: block;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo para botones en las tablas */
+table a {
+  color: #007bff; /* Azul del enlace */
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+table a:hover {
+  text-decoration: underline;
+  color: #0056b3; /* Azul más oscuro al pasar el cursor */
+}
+/* Botones de acción en tablas */
+table a.button {
+  display: inline-block;
+  padding: 8px 12px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 4px;
+  color: #ffffff; /* Texto blanco */
+  transition: background-color 0.3s ease, box-shadow 0.2s ease;
+}
+
+table a.button.edit {
+  background-color: #007bff; /* Azul para editar */
+}
+
+table a.button.edit:hover {
+  background-color: #0056b3; /* Azul oscuro al pasar el cursor */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Efecto de sombra */
+}
+
+table a.button.delete {
+  background-color: #dc3545; /* Rojo para eliminar */
+}
+
+table a.button.view {
+  background-color: #237a37; /* Verde para ver detalles */
+}
+
+table a.button.delete:hover {
+  background-color: #a71d2a; /* Rojo oscuro al pasar el cursor */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Efecto de sombra */
+}
+/* Botón principal: Agregar Nuevo Objeto */
+.button.add-new {
+  display: inline-block;
+  background-color: #0056b3; /* Verde */
+  color: #ffffff; /* Texto blanco */
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.button.add-new:hover {
+  background-color: #699bdc; /* Verde más oscuro */
+  transform: translateY(-2px); /* Efecto de levantar el botón */
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+}
+
+.button.add-new:active {
+  background-color: #352ac7e9; /* Verde aún más oscuro */
+  transform: translateY(0); /* Vuelve a su posición original */
+}
+ /* Barra lateral */
+ .sidebar {
+  background-color: #004080;
+  color: white;
+  width: 250px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar h2 {
+  font-family: 'Playfair Display', serif;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.sidebar nav a {
+  display: block;
+  padding: 0.8rem;
+  margin-bottom: 0.5rem;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background 0.3s;
+}
+
+.sidebar nav a.active, .sidebar nav a:hover {
+  background-color: #003366;
+}
+.dashboard {
+  display: flex;
+  height: 100vh;
+}
+/* Contenido principal */
+main {
+  flex: 1;
+  padding: 1rem 2rem;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.search-notifications {
+  display: flex;
+  gap: 0.5rem;
+}
+
+input[type="text"] {
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+#inventory-list{
+  width: 100%;
+}
+.volver{
+  background-color: #333333;
+  color: white;
+}
+.logo {
+  font-family: 'Times New Roman', serif;
+  font-weight: bold;
+  font-size: 72px;
+  color: #2A6FAF;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  border: 4px solid #2A6FAF;
+  border-radius: 50%;
+  padding: 20px;
+  display: inline-block;
+  text-align: center;
+  background: linear-gradient(to bottom, #ffffff, #e6f3ff);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+  margin-bottom: 15px;
+}
+
