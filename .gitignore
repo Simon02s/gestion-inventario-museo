@@ -1,0 +1,24 @@
+*.sql           # Archivos de volcado de base de datos
+*.sqlite        # Archivos SQLite
+.env            # Variables de entorno (API keys, configuraciones)
+
+node_modules/   # Dependencias de Node.js (si usas un frontend con npm/yarn)
+dist/           # Archivos generados en producción
+.DS_Store       # Archivo específico de macOS
+Thumbs.db       # Archivo específico de Windows
+
+.idea/          # Configuración de JetBrains (IntelliJ, PhpStorm, etc.)
+.vscode/        # Configuración de Visual Studio Code
+*.log           # Archivos de log
+*.tmp           # Archivos temporales
+
+uploads/        # Carpeta de subida de imágenes
+*.png
+*.jpg
+*.jpeg
+
+# Excluye el archivo .env con datos sensibles
+.env
+
+# Pero permite subir un archivo de ejemplo
+!.env.example
